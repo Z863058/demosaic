@@ -16,7 +16,7 @@ Use GAN to remove mosaic.
 This code depends on opencv-python, torchvision, matplotlib available via pip install.
 #### Clone this repo
 ```bash
-git clone https://github.com/GitHubZiqiangZhou/demosaic
+git clone https://github.com/Z863058/demosaic
 cd demosaic
 ```
 ## Make training datasets
