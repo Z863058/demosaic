@@ -20,8 +20,9 @@ git clone https://github.com/GitHubZiqiangZhou/demosaic
 cd demosaic
 ```
 ## Make training datasets
-Use addmosaic model to make video datasets(Require addmosaic pre-trained model. This is better for processing video mosaics)
-Train addmosaic pre-trained model, please refer to [README_addmosaic.md](./README_addmosaic.md)
+Use addmosaic model to make video datasets(Require addmosaic pre-trained model. This is better for processing video mosaics).
+
+Train addmosaic pre-trained model, please refer to [README_addmosaic.md](./README_addmosaic.md).
 
 ```bash
 cd z_make_datasets
