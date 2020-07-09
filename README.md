@@ -1,9 +1,9 @@
 # Demosaic
 Use GAN to remove mosaic.
 
-Major innovations:
+**Major innovations:**
 
-1. Automatic video processing;
+**1. Automatic video processing;**
 
 **2. The mosaic is generated randomly in the training process.**
 
@@ -37,7 +37,7 @@ python z_make_video_dataset.py --datadir x0.mp4 --savedir ../datasets/demosaic
 ```
 ## Set training parameters
 
-**Modify method get_random_parameter(img, mask) in z_util.mosaic.py.**
+**Modify the method get_random_parameter(img, mask) in z_util.mosaic.py.**
 
 **Let the method produce the appropriate parameters of mosaic_size, mod and rect_rat to fit the mosaic video.**
 
