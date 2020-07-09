@@ -1,5 +1,12 @@
 # Demosaic
 Use GAN to remove mosaic.
+
+Major innovations:
+
+1. Automatic video processing;
+
+**2. The mosaic is generated randomly in the training process.**
+
 <div align="center">
   <img src='./imgs/f_mosaic.jpg' width='400'/>
   <img src='./imgs/f_demosaic.jpg' width='400'/>
@@ -7,13 +14,13 @@ Use GAN to remove mosaic.
 
 ## Getting Started
 #### Prerequisites
-  - Linux, Mac OS, Windows
+  - Linux, Mac OS
   - Python 3.5+
   - ffmpeg 3.4.6
   - Pytorch 1.0+
-  - NVIDIA GPU(with more than 6G memory) + CUDA CuDNN<br>
+  - NVIDIA GPU (11G memory or larger) + CUDA cuDNN
 #### Dependencies
-This code depends on opencv-python, torchvision, matplotlib available via pip install.
+This code depends on opencv-python, torchvision, Matplotlib, dominate, and so on, available via pip install.
 #### Clone this repo
 ```bash
 git clone https://github.com/Z863058/demosaic
@@ -28,7 +35,11 @@ Train addmosaic pre-trained model, please refer to [README_addmosaic.md](./READM
 cd z_make_datasets
 python z_make_video_dataset.py --datadir x0.mp4 --savedir ../datasets/demosaic
 ```
-## Training parameters
+## Set training parameters
+
+**Modify method get_random_parameter(img, mask) in z_util.mosaic.py.**
+
+**Let the method produce the appropriate parameters of mosaic_size, mod and rect_rat to fit the mosaic video.**
 
 ## Training
 ```bash
