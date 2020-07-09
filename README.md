@@ -1,6 +1,8 @@
 # Demosaic
 Use GAN to remove mosaic.
 
+Introduction in Chinese, please refer to [视频去马赛克](https://zhuanlan.zhihu.com/p/157986608).
+
 **Major innovations:**
 
 **1. Automatic video processing;**
