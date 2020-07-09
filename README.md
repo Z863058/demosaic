@@ -48,10 +48,18 @@ python z_train.py --dataroot ./datasets/demosaic_20200501_286to256 --name demosa
 ## Testing
 ```bash
 # for images
-python z_test.py  --dataroot ./datasets/demosaic_20200501_286to256 --name demosaic_20200501_286to256_random --loadSize 256 --fineSize 256 --label_nc 0 --no_instance --gpu_ids 0
+python z_test.py --dataroot ./datasets/demosaic_20200501_286to256 --name demosaic_20200501_286to256_random --loadSize 256 --fineSize 256 --label_nc 0 --no_instance --gpu_ids 0
 # for video
 python z_demosaic.py --name demosaic_20200501_286to256_random --media_path x.mp4
 ```
 ## Acknowledgments
 This code borrows heavily from [[pix2pixHD]](https://github.com/NVIDIA/pix2pixHD) [[DeepMosaics]](https://github.com/HypoX64/DeepMosaics.git) [[Pytorch-UNet]](https://github.com/milesial/Pytorch-UNet) [[BiSeNet]](https://github.com/ooooverflow/BiSeNet).
+
+## More
+更多（不可描述）信息，敬请微信搜索或扫码关注“天天P图AI”公众号。
+
+<div align="center">
+  <img src='./imgs/tswt.png' width='400'/>
+</div>
+
 
